@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!--La fuente utilizada para mi texto. La siguiente linea de codigo es la direccion del CSS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!--Todo el banner de navegacion esta dentro de "nav"-->
+    <nav>
+        <div class="logo">
+            <h1>Kenneth Huerta</h1>
+        </div>
+        
+        <ul class="nav_links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">About</a></li>
+            <li><button>Contact</button> </li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!--El banner con el mensaje de bienvenida y la imagen estan aqui-->
+    <div class="banner">
+        <H1 class="bannerText"><span></span><a href="#"></a><b></b></H1>
+        <img class="imgBanner" src="BannerImg3.png">   
+    </div>
+
+    <!--Todo lo que esta por debajo del el banner esta aqui. Es un contenedor-->
+    <div class="main">
+        <div class= "container">
+            <h1 id="projects">Projects</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt nulla minus amet rem impedit repellat quae corporis reprehenderit ullam id maxime, deserunt animi. Ipsa possimus vitae itaque ab commodi eos natus doloremque! Veniam qui distinctio dicta nulla! Unde doloribus dicta quidem ea consequuntur dolore, nobis voluptatum voluptate quibusdam modi? Voluptates.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, corrupti quos! Delectus hic sit, mollitia iste expedita optio culpa iure rem similique deleniti eos amet, sequi aspernatur dolor sapiente magnam autem? Sapiente iusto inventore hic unde est qui illo magnam doloribus similique, nulla beatae nobis non iure fugiat nemo quaerat, quas ipsa provident dicta laboriosam veritatis. Officiis nisi quos dolores iure atque, rerum tempora. Exercitationem sit ducimus, iure corrupti delectus officia similique obcaecati possimus assumenda commodi dolorum quo eligendi laboriosam ab ratione dolores placeat tempora fuga explicabo at corporis aspernatur harum? Ea ipsam incidunt non assumenda ad reprehenderit itaque corporis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti libero aspernatur dicta ipsum obcaecati, assumenda enim quis perferendis dolorem? Aliquam voluptates fuga saepe repudiandae dolorum commodi reiciendis, unde sint tempora quod eos dolore est odio architecto quos ducimus officia quasi.</p>
+        </div>
+    </div>
+
+    <!--Estos 2 divs son las animaciones que aparecen al inicio que se deslizan-->
+    <div class="slider">
+    </div>
+    <div class="slider2">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/TextPlugin.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
