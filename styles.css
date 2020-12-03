@@ -149,6 +149,10 @@ button:hover{
     transform: rotate(45deg) translate(-5px,-3.6px);
 }
 
+.bodyNav{
+    overflow-y: hidden;
+}
+
 @keyframes nav_linksFade{
     from{
         opacity: 0;
