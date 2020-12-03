@@ -75,10 +75,10 @@ nav{
 }
 
 button{
-    padding: .75vh .75vh;
+    padding: .5vh .75vh;
     color:rgb(244, 241, 222);
     border: none;
-    font-size: 2vh;
+    font-size: 2.4vh;
     font-weight: 400%;
     border-radius: 50px;
     cursor: pointer;
