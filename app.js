@@ -11,18 +11,21 @@ gsap.to('h1 b', {duration: 0, delay: 4, text: ".", ease: "none"});
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav_links');
+    const navLi = document.querySelectorAll('.nav_links li');
 
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
         navSlideEffect();
     })
-
-    nav.addEventListener('click', () => {
+    
+    navLi.forEach(function(element){
+        element.addEventListener('click', () => {
         if(getComputedStyle(burger).display !=='none'){
             nav.classList.toggle('nav-active');            
             navSlideEffect();
         }
     })
+    });
 }
 
 const navSlideEffect = () => {
