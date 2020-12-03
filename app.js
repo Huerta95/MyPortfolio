@@ -14,14 +14,14 @@ const navSlide = () => {
 
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
-
         navSlideEffect();
     })
 
     nav.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
-        
-        navSlideEffect();
+        if(getComputedStyle(burger).display ==='block'){
+            nav.classList.toggle('nav-active');            
+            navSlideEffect();
+        }
     })
 }
 
