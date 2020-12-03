@@ -26,6 +26,7 @@ const navSlide = () => {
 }
 
 const navSlideEffect = () => {
+    const burger = document.querySelector('.burger');
     const navLinks = document.querySelectorAll('.nav_links li');
 
     navLinks.forEach((link, index) => {
