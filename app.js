@@ -18,7 +18,7 @@ const navSlide = () => {
     })
 
     nav.addEventListener('click', () => {
-        if(getComputedStyle(burger).display ==='block'){
+        if(getComputedStyle(burger).display !=='none'){
             nav.classList.toggle('nav-active');            
             navSlideEffect();
         }
