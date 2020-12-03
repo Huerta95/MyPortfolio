@@ -3,9 +3,9 @@ gsap.to("nav", {duration: 1, delay:.1, autoAlpha: 1});
 gsap.to('.slider', {duration: 1, delay: .3, y: '-100%', ease: Power2.easeOut});
 gsap.from('.slider2', {duration: 1, delay: .7, x: '100%', ease: Power2.easeOut});
 gsap.to('h1 span', {duration: 1, delay: .7, text: "Hello! My name is Kenneth.", ease: "none"});
-gsap.to('h1 span', {duration: .8, delay: 2.5, text: "Hello! This is my ", ease: "none"});
-gsap.to('h1 a', {duration: .7, delay: 3.3, text: "Portfolio", ease: "none"});
-gsap.to('h1 b', {duration: 0, delay: 3.9, text: ".", ease: "none"});
+gsap.to('h1 span', {duration: .9, delay: 2.5, text: "Hello! This is my ", ease: "none"});
+gsap.to('h1 a', {duration: .7, delay: 3.4, text: "Portfolio", ease: "none"});
+gsap.to('h1 b', {duration: 0, delay: 4, text: ".", ease: "none"});
 
 
 const navSlide = () => {
