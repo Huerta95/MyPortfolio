@@ -1,11 +1,11 @@
 
 gsap.to("nav", {duration: 1, delay:.1, autoAlpha: 1});
 gsap.to('.slider', {duration: 1, delay: .3, y: '-100%', ease: Power2.easeOut});
-gsap.from('.slider2', {duration: 1, delay: .6, x: '100%', ease: Power2.easeOut});
-gsap.to('h1 span', {duration: 1, delay: .4, text: "Hello! My name is Kenneth.", ease: "none"});
-gsap.to('h1 span', {duration: .7, delay: 1.8, text: "Hello! This is my ", ease: "none"});
-gsap.to('h1 a', {duration: .6, delay: 2.5, text: "Portfolio", ease: "none"});
-gsap.to('h1 b', {duration: 0, delay: 3.1, text: ".", ease: "none"});
+gsap.from('.slider2', {duration: 1, delay: .7, x: '100%', ease: Power2.easeOut});
+gsap.to('h1 span', {duration: 1, delay: .7, text: "Hello! My name is Kenneth.", ease: "none"});
+gsap.to('h1 span', {duration: .7, delay: 2.5, text: "Hello! This is my ", ease: "none"});
+gsap.to('h1 a', {duration: .6, delay: 3.2, text: "Portfolio", ease: "none"});
+gsap.to('h1 b', {duration: 0, delay: 3.8, text: ".", ease: "none"});
 
 
 const navSlide = () => {
