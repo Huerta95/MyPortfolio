@@ -1,26 +1,27 @@
 
 gsap.to("nav", {duration: 1, delay:.1, autoAlpha: 1});
+gsap.to('.banner p', {duration: .8, delay: 2, text: "I'm a Front-end Developer", ease: "none"});
 gsap.to('.slider', {duration: 1, delay: .3, y: '-100%', ease: Power2.easeOut});
-gsap.from('.slider2', {duration: 1, delay: .7, x: '100%', ease: Power2.easeOut});
+gsap.from('.slider2', {duration: 1, delay: 1, x: '100%', ease: Power2.easeOut});
 gsap.to('h1 span', {duration: 1, delay: .7, text: "Hello! My name is Kenneth.", ease: "none"});
-gsap.to('h1 span', {duration: .9, delay: 2.5, text: "Hello! This is my ", ease: "none"});
-gsap.to('h1 a', {duration: .7, delay: 3.4, text: "Portfolio", ease: "none"});
-gsap.to('h1 b', {duration: 0, delay: 4, text: ".", ease: "none"});
+gsap.to('h1 span', {duration: .7, delay: 3.2, text: "Hello! This is my ", ease: "none"});
+gsap.to('h1 a', {duration: .6, delay: 3.9, text: "Portfolio", ease: "none"});
+gsap.to('h1 b', {duration: 0, delay: 4.5, text: ".", ease: "none"});
 
 
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav_links');
-    const navLi = document.querySelectorAll('.nav_links li');
+    const navli = document.querySelectorAll('.nav_links li');
 
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
         navSlideEffect();
     })
-    
-    navLi.forEach(function(element){
+
+    navli.forEach(function(element) {
         element.addEventListener('click', () => {
-            if(getComputedStyle(burger).display !=='none'){
+            if(getComputedStyle(burger).display ==='block'){
                 nav.classList.toggle('nav-active');            
                 navSlideEffect();
             }
