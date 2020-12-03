@@ -103,7 +103,36 @@ button:hover{
     transition: all 0.3s ease;
 }
 
-/* Configuracion del nav para resoluciones moviles */
+/* Banner de bienvenida */
+.banner{
+    padding-top: 7vh;
+    background-color:rgb(242, 204, 143);
+    height: calc(7vh + 40vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerText{
+    color: rgb(244, 241, 222);
+    font-size: 10vh;
+    text-align: center;
+}
+
+.bannerText a{
+    color: rgb(224, 122, 95);
+    text-decoration: none;
+}
+
+.banner p{
+    color: rgb(61, 64, 91);
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5vh;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Configuracion del nav y banner para resoluciones moviles */
 @media only screen and (max-width: 768px){
     body{
         overflow-x: hidden;
@@ -132,9 +161,14 @@ button:hover{
         opacity: 0;
         padding-right: 10%;
     }
-    
+
     .bannerText{
         font-size: 7vh;
+    }
+    
+    .bannerText a{
+        color: rgb(224, 122, 95);
+        text-decoration: none;
     }
     
     .banner p{
@@ -170,35 +204,6 @@ button:hover{
         opacity: 1;
         text-replace: translateX(0px);
     }
-}
-
-/* Banner de bienvenida */
-.banner{
-    padding-top: 7vh;
-    background-color:rgb(242, 204, 143);
-    height: calc(7vh + 40vh);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bannerText{
-    color: rgb(244, 241, 222);
-    font-size: 10vh;
-    text-align: center;
-}
-
-.bannerText a{
-    color: rgb(224, 122, 95);
-    text-decoration: none;
-}
-
-.banner p{
-    color: rgb(61, 64, 91);
-    font-family: 'Poppins', sans-serif;
-    font-size: 3.5vh;
-    font-weight: bold;
-    text-align: center;
 }
 
 /* Contenedor despues del banner */
