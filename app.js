@@ -26,10 +26,9 @@ const navSlide = () => {
 }
 
 const navSlideEffect = () => {
-    const burger = document.querySelector('.burger');
     const navLinks = document.querySelectorAll('.nav_links li');
+    const burger = document.querySelector('.burger');
     const bodyNav = document.querySelector('body');
-
 
     navLinks.forEach((link, index) => {
         if(link.style.animation){
@@ -38,8 +37,8 @@ const navSlideEffect = () => {
             link.style.animation = `nav_linksFade 0.5s ease forwards ${index /7 + .3}s`;
         }
     });
-    
-    bodyNav.classLight.toggle('bodyNav');
+
+    bodyNav.classList.toggle('body_nav')
     burger.classList.toggle('toggle');
 }
 
