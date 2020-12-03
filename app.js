@@ -28,6 +28,8 @@ const navSlide = () => {
 const navSlideEffect = () => {
     const burger = document.querySelector('.burger');
     const navLinks = document.querySelectorAll('.nav_links li');
+    const bodyNav = document.querySelector('body');
+
 
     navLinks.forEach((link, index) => {
         if(link.style.animation){
@@ -37,6 +39,7 @@ const navSlideEffect = () => {
         }
     });
     
+    bodyNav.classLight.toggle('bodyNav');
     burger.classList.toggle('toggle');
 }
 
