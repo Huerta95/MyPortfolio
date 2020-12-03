@@ -20,11 +20,11 @@ const navSlide = () => {
     
     navLi.forEach(function(element){
         element.addEventListener('click', () => {
-        if(getComputedStyle(burger).display !=='none'){
-            nav.classList.toggle('nav-active');            
-            navSlideEffect();
-        }
-    })
+            if(getComputedStyle(burger).display !=='none'){
+                nav.classList.toggle('nav-active');            
+                navSlideEffect();
+            }
+        })
     });
 }
 
