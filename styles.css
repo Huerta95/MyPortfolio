@@ -132,36 +132,6 @@ button:hover{
     text-align: center;
 }
 
-/*Animacion del nav*/
-.nav-active{
-    transform: translateX(0%);
-}
-
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,3.6px);
-}
-.toggle .line2{
-    opacity: 0;
-}
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-3.6px);
-}
-
-.body_nav{
-    overflow-y: hidden;
-}
-
-@keyframes nav_linksFade{
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        text-replace: translateX(0px);
-    }
-}
-
 
 /* Contenedor despues del banner */
 .main{
@@ -250,5 +220,35 @@ button:hover{
     .main{
         grid-template-columns: 1fr 10fr 1fr;
         grid-template-rows: 1fr 18fr 1fr;
+    }
+}
+
+/*Animacion del nav*/
+.nav-active{
+    transform: translateX(0%);
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,3.6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-3.6px);
+}
+
+.body_nav{
+    overflow-y: hidden;
+}
+
+@keyframes nav_linksFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        text-replace: translateX(0px);
     }
 }
